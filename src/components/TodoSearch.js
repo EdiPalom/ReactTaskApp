@@ -2,10 +2,12 @@ import React from 'react';
 
 import './css/TodoSearch.css';
 import search from './img/search.svg';
+import {TodoContext} from '../TodoContext';
 
+function TodoSearch()
+{
+    const {search_value, set_search_value} = React.useContext(TodoContext);
 
-function TodoSearch({search_value, set_search_value})
-{   
     const on_change = (msg)=>{
         set_search_value(msg.target.value);
     };
