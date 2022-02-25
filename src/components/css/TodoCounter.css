@@ -1,0 +1,11 @@
+.todo-counter
+{
+    color:#fff;
+    
+    font-size: 2.4rem;
+    text-align: center;
+
+    margin-top:22px;
+
+    text-shadow: 2px 1.5px 0px #898999,5px 4px 3px black;
+}

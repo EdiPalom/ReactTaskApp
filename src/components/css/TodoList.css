@@ -1,0 +1,15 @@
+.section-list{
+    width:100%;
+    max-width: 500px;
+}
+
+.todo-list{
+    width:80%;
+    margin:0 auto;
+
+    list-style:none;
+    padding:0;
+
+    display:flex;
+    flex-direction:column;
+}

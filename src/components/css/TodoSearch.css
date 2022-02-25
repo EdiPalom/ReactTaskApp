@@ -1,0 +1,30 @@
+.todo-search{
+    display:block;
+    width:100%;
+    
+    height:40px;
+    margin: 22px auto;
+
+    font-size: 1.8rem;
+
+    border-radius:2px;
+    border:none;
+
+    padding:0 10px;
+}
+
+.search-container{
+    position:relative;
+    width:80%;
+    max-width:500px;
+
+    margin:0 auto;
+}
+
+.search-icon{
+    position:absolute;
+    margin-top:3px;
+    left:87%;
+    width:32px;
+    height:32px;
+}
