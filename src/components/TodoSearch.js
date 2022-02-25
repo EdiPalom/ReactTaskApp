@@ -1,11 +1,13 @@
+import React from 'react';
+
 import './css/TodoSearch.css';
 import search from './img/search.svg';
 
 
-function TodoSearch()
-{
+function TodoSearch({search_value, set_search_value})
+{   
     const on_change = (msg)=>{
-        console.log(msg.target.value);
+        set_search_value(msg.target.value);
     };
     
     return(
@@ -15,6 +17,7 @@ function TodoSearch()
               className='todo-search'
               placeholder="Search task..."
               onChange={on_change}
+              value={search_value}
             />
         </div>
     );
