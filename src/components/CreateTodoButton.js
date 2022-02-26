@@ -1,15 +1,13 @@
+import React from 'react';
+
 import "./css/CreateTodoButton.css";
 
-function CreateTodoButton()
-{
-    const onclick_button = ()=>{
-        alert('clicked');
-    };
-    
+function CreateTodoButton({switch_modal})
+{    
     return(
         <button
           className='create-button'
-          onClick={onclick_button}
+          onClick={switch_modal}
         >
           +
         </button>        

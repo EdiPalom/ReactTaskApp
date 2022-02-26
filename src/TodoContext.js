@@ -9,6 +9,9 @@ function TodoProvider(props){
     const {item:todos,save_item:save_todos,loading,error} = useLocalStorage('TODOS_V1',[]);
     const [search_value, set_search_value] = React.useState('');
 
+    const [open_modal, set_open_modal] = React.useState(false);
+
+
     let searched_todos = [];
     const total_todos = todos.length;
 
@@ -54,6 +57,28 @@ function TodoProvider(props){
     }else{
         searched_todos = get_search_todos();
     }
+
+    const switch_modal= ()=>
+    {
+        set_open_modal(prev_state=>!prev_state);
+    }
+
+    const save_task = (name)=>{
+        if(name){
+            const todo_name = name[0].toUpperCase() + 
+                  name.slice(1);
+            
+            const todo = {
+                name:todo_name,
+                completed: false
+            };
+            const new_todos = [...todos];
+            new_todos.unshift(todo);
+            save_todos(new_todos);
+        }
+
+        switch_modal();
+    }
     
     return(
         <Provider value={{
@@ -65,7 +90,10 @@ function TodoProvider(props){
             searched_todos,
             set_search_value,
             complete_todos,
-            delete_todo,            
+            delete_todo,
+            open_modal,
+            switch_modal,
+            save_task,
         }}>
           {props.children}
         </Provider>

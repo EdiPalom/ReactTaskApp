@@ -1,0 +1,17 @@
+.empty{
+    width:80%;
+    margin:0 auto;
+
+    font-size:3rem;
+    font-weight:bold;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+}
+
+.empty img{
+    margin: 10px auto;
+    align-self: center;
+}
