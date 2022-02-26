@@ -27,6 +27,8 @@ function useLocalStorage(item_name,initial_value)
 
                 set_item(parsed_item);
                 set_loading(false);
+
+                // set_error(true);
             }catch{
                 set_error(error);
             }

@@ -68,3 +68,15 @@
 .todo-item:hover{
     border-color: #B3E5FC;
 }
+
+@media (min-width: 423px){
+    .close{
+        left:93%;
+    }
+}
+
+@media (min-width: 523px){
+    .close{
+        left:95%;
+    }
+}

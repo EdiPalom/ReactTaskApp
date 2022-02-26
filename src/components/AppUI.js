@@ -11,6 +11,7 @@ import {TodoForm} from './TodoForm';
 import {TodoLoading} from './TodoLoading';
 import {TodoError} from './TodoError';
 import {TodoEmpty} from './TodoEmpty';
+import {TodoTitle} from './TodoTitle';
 
 function AppUI ()
 {
@@ -26,16 +27,18 @@ function AppUI ()
     
     return(
         <React.Fragment>
-          <TodoCounter/>
-          <TodoSearch/>
-
+          <TodoTitle/>
+          
           <TodoList>
             {error && <TodoError/>}
             {loading && <TodoLoading/>}
             {(!loading && !searched_todos.length) && <TodoEmpty/>}
 
-            {!error && 
+            {!error && !loading && !!searched_todos.length && 
              <section>
+                 <TodoCounter/>
+                 <TodoSearch/>
+
                {
                    searched_todos.map(todo=>(
                        <TodoItem key={todo.name}
@@ -46,9 +49,15 @@ function AppUI ()
 
                
                }
-               <CreateTodoButton switch_modal={switch_modal}/>
+
              </section>
             }
+
+            {
+               !error &&
+                <CreateTodoButton switch_modal={switch_modal}/>                  
+            }
+
           </TodoList>                
 
           {open_modal &&(
