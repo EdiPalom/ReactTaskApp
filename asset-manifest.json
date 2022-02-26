@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ReactTaskApp/static/css/main.44a4740c.css",
-    "main.js": "/ReactTaskApp/static/js/main.370bd872.js",
+    "main.css": "/ReactTaskApp/static/css/main.45590c1e.css",
+    "main.js": "/ReactTaskApp/static/js/main.d37cfca0.js",
     "index.html": "/ReactTaskApp/index.html",
     "static/media/error.svg": "/ReactTaskApp/static/media/error.c20e9d6458131e90afc30cb95d3f30df.svg",
     "static/media/notes.svg": "/ReactTaskApp/static/media/notes.820aa5e057bc570ce968306538da807a.svg",
@@ -9,11 +9,11 @@
     "static/media/double-check.svg": "/ReactTaskApp/static/media/double-check.0a85ffd7a133fa00c436abc256beb0c1.svg",
     "static/media/add.svg": "/ReactTaskApp/static/media/add.5dc57c683277efd1f3bac2ce44df3715.svg",
     "static/media/check.svg": "/ReactTaskApp/static/media/check.b4753a498813d863218c8edc04276c74.svg",
-    "main.44a4740c.css.map": "/ReactTaskApp/static/css/main.44a4740c.css.map",
-    "main.370bd872.js.map": "/ReactTaskApp/static/js/main.370bd872.js.map"
+    "main.45590c1e.css.map": "/ReactTaskApp/static/css/main.45590c1e.css.map",
+    "main.d37cfca0.js.map": "/ReactTaskApp/static/js/main.d37cfca0.js.map"
   },
   "entrypoints": [
-    "static/css/main.44a4740c.css",
-    "static/js/main.370bd872.js"
+    "static/css/main.45590c1e.css",
+    "static/js/main.d37cfca0.js"
   ]
 }
